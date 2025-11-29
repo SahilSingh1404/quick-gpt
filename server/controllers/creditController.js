@@ -71,7 +71,7 @@ export const purchasePlan=async(req,res)=>{
             mode:'payment',
             success_url:`${origin}/loading`,
             cancel_url:`${origin}`,
-            metadata:{transactionId:transaction._id.toString(),appId:''},
+            metadata:{transactionId:transaction._id.toString(),appId:'quick-gpt'},
             expires_at:Math.floor(Date.now()/1000)+30*60
         })
 
